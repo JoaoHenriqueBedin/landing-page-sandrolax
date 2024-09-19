@@ -36,7 +36,7 @@ export default function Home() {
         <>
             <header className="container py-sm">
                 <nav className="flex items-center justify-between">
-                    <img src={Logo} alt="Logo DonaFrost" width={150} height={150} />
+                    <img src={Logo} alt="Logo Mecanica" width={150} height={150} />
                     <div className="desktop-only">
                         <ul className="flex gap-1">
                             <li>
@@ -69,7 +69,7 @@ export default function Home() {
                                     <ul>
                                         <li><a href="#">Home</a></li>
                                         <li><a href="#solution">Soluções</a></li>
-                                        <li><a href="#testimonials">Depoimentos</a></li>
+                                        <li><a href="#testimonials">Galeria</a></li>
                                         <li><a href="#pricing">Preços</a></li>
                                         <li><a href="#contact">Contato</a></li>
                                         <li><a className="reverse-color" href="#">Login</a></li>
