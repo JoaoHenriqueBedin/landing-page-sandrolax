@@ -1,0 +1,139 @@
+#solutions {
+    text-align: center;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: #e7e7e7;
+    border-radius: 8px;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.solutions-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.solution-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    min-width: 250px;
+    flex: 1;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.solution-card h3 {
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.solution-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.solution-card {
+    background-color: #F8F8F8;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    min-width: 250px;
+    flex: 1;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.solution-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.solution-card:hover::after {
+    transform: scaleX(1);
+}
+
+.piston-logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.analise-logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.raspagem-logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .solutions-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .solution-card {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+}
