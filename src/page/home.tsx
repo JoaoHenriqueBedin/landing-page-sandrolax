@@ -39,7 +39,7 @@ export default function Home() {
                                 <a href="#">Home</a>
                             </li>
                             <li>
-                                <a href="#solution">Soluções</a>
+                                <a href="#solutions">Soluções</a>
                             </li>
                             <li>
                                 <a href="#testimonials">Depoimentos</a>
