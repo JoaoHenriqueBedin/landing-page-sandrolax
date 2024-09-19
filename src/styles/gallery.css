@@ -1,0 +1,36 @@
+#gallery {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas maiores para imagens maiores */
+    gap: 1rem; /* Espaçamento entre as imagens */
+    margin-top: 2rem; /* Espaçamento entre o texto e as imagens */
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente a imagem */
+    align-items: center; /* Centraliza verticalmente a imagem */
+    height: 300px; /* Aumenta a altura do contêiner */
+    overflow: hidden;
+    position: relative;
+    background-color: #f0f0f0; /* Cor de fundo para preencher espaço extra, caso haja */
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem ocupe todo o espaço sem distorção */
+    max-width: none;
+}
+
+
+.gallery-item img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% quando o cursor passa por cima */
+    transition: transform 0.5s ease; /* Efeito de transição suave */
+
+}

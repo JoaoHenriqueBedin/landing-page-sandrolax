@@ -5,12 +5,16 @@ import Menu from "../assets/hamburguer.svg";
 import HeroRectangleOne from "../assets/images/rectangleOne.png";
 import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
 import Piston from "../assets/images/piston.png";
+import MechanicImage1 from "../assets/images/imagemMecanica01.png";
+import MechanicImage2 from "../assets/images/imagemMecanica02.png";
+import MechanicImage3 from "../assets/images/imagemMecanica03.png";
 import Logo from "../assets/logo.svg";
 import Button from "../components/button.tsx";
 import "../styles/header.css";
 import "../styles/hero.css";
 import "../styles/solutions.css";
 import "../styles/utility.css";
+import "../styles/gallery.css";
 
 
 
@@ -42,7 +46,7 @@ export default function Home() {
                                 <a href="#solutions">Soluções</a>
                             </li>
                             <li>
-                                <a href="#testimonials">Depoimentos</a>
+                                <a href="#gallery">Galeria</a>
                             </li>
                             <li>
                                 <a href="#pricing">Preços</a>
@@ -120,6 +124,24 @@ export default function Home() {
                         <img src={Piston} alt="Manutenções em Gerais" className="piston-logo" />
                         <h3>Manutenções em Gerais</h3>
                         <p>Manuntenções em geral, desde retifica de motores até manutenção preventiva como troca de pastilhas de freio, óleo, filtro e entre outros.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery" className="container py-lg">
+                <h2 className="section-title">Galeria da Mecânica</h2>
+                <p className="section-description">
+                    Confira algumas imagens da nossa oficina e veja como trabalhamos com dedicação para cuidar do seu veículo.
+                </p>
+                <div className="gallery-grid">
+                    <div className="gallery-item">
+                        <img src={MechanicImage1} alt="Foto da oficina 1" />
+                    </div>
+                    <div className="gallery-item">
+                        <img src={MechanicImage2} alt="Foto da oficina 2" />
+                    </div>
+                    <div className="gallery-item">
+                        <img src={MechanicImage3} alt="Foto da oficina 3" />
                     </div>
                 </div>
             </section>
