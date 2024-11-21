@@ -7,7 +7,6 @@ export default function Contato() {
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const [loading, setLoading] = useState(false);
-  // const apiKey = process.env.REACT_APP_SENDGRID_API_KEY;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,7 +31,7 @@ export default function Contato() {
         headers: {
           'Access-Control-Allow-Origin': '*',
           'Content-Type': 'application/json',
-          'Authorization': `Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ5NzQwYTcwYjA5NzJkY2NmNzVmYTg4YmM1MjliZDE2YTMwNTczYmQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE2NjMwMTcwMzczMTI4OTMxNjI0IiwiaGQiOiJtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWwiOiJqaGJwZGF5a29AbWluaGEuZmFnLmVkdS5iciIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiWGJwVl9fR1FmdUlxaEozWkd1bGZ6ZyIsIm5iZiI6MTczMjE5MDA3OSwiaWF0IjoxNzMyMTkwMzc5LCJleHAiOjE3MzIxOTM5NzksImp0aSI6IjVmMmI2OGZiZjIwNDAxNjljYTYzYzdjZjc3MzZmYjg1N2QxNWY4ZmQifQ.oUv8l9NLtYUtgYr1c8uWnh2vaKVeIG-bTaLCf3mcpCvf-U2oad6orVdnCUnJthBUggdsh7m6CAo6b1yJybuvBbXfvH0KZBK5Nsgb6_NEPItg0gKhSs6Ysvu6fPenPy1BuydcDwj5DwXMQTkTT4VMes3SBgfQMkQ_sruhb90Lw31k175PXZ5zjpNkxiwjKWfl0z-h-hU_FmzPym95AO2QPF5hxp5nTk646FkiyZk3Pu6G9IZ2k1ahfvtXDhZbxpmn-4vemxL2A1kX4PbBjFRlpL9jyLOPL-28x9ArrmXe2sVCsJFuFpoFLkypBwBDqMxa_U3y3TIQ_tEmJ1HbOMc1LA`,
+          'Authorization': `Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ5NzQwYTcwYjA5NzJkY2NmNzVmYTg4YmM1MjliZDE2YTMwNTczYmQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE2NjMwMTcwMzczMTI4OTMxNjI0IiwiaGQiOiJtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWwiOiJqaGJwZGF5a29AbWluaGEuZmFnLmVkdS5iciIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiRThNQlpnd0hvRjlVbEFTYV9Zc01aQSIsIm5iZiI6MTczMjIyODExOSwiaWF0IjoxNzMyMjI4NDE5LCJleHAiOjE3MzIyMzIwMTksImp0aSI6ImQxYjViMjg3YmIzZTZkOGM3Y2E5MDljYTk5YzhhNzA3ZmFkM2ZmNmYifQ.N05QKBRsZMgcxOisOLU7v8QuvE6su_D0AlCxyCUBohfITAN_dzhzaY94Lgzl8TRgZLaTh8mcrNhuETUhx37MSUstx5Tqu0VD0jGvNItnQggKq4S8lIjtTi5AGVyynJjF2VMgRfJM94Cg5OXGz2dmcHGII2t6oXwSGPbzd-zJfHfMug0v0zoF7QDF0EtLFBB79qffqAg_Mp8FkfcMgV54uhMEybsn8Imjg6Z-NCtXV0EgxfiM7hMNZ3Poo6XwdfOQHhzisnFlOemouPYG9jKL3YIRo_wJaTiM61UFeo52jV5zv1_OqWcPT82z6HUA_QEUhsy2M-7MscF3c9LGQNzUcQ`,
         },
         body: JSON.stringify({ toMail: email, content }),
       });
