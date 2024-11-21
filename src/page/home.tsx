@@ -196,7 +196,7 @@ export default function Home() {
         <Carousel />
       </section>
 
-      <section id="pricing" className=" container py-lg pricing-section">
+      <section id="pricing" className=" container py-lg pricing-section section-spacing">
         <div className="pricing-card">
           <h3>Troca de Óleo</h3>
           <h2>R$ 150,00</h2>
@@ -214,15 +214,6 @@ export default function Home() {
           <p>Verificação completa do veículo para prevenir problemas futuros.</p>
         </div>
       </section>
-
-      {/* <section id="contact" className="contact-section section-spacing">
-        <p className="contact-intro">Envie sua dúvida</p>
-        <h2>Envie sua dúvida</h2>
-        <h3>Envie sua dúvida e teremos o prazer de responder ela, estamos a disposição.</h3>
-        <input type="email" placeholder="Seu Melhor E-mail" />
-        <input type="text" placeholder="Motivo do contato. Ex gostaria de saber se tem desconto." />
-        <Button text="Envie seu e-mail" />
-      </section>   */}
 
       <Contact />
 
