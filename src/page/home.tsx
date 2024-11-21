@@ -9,6 +9,7 @@ import Logo from "../assets/logo.svg";
 import Button from "../components/button.tsx";
 import Carousel from "../components/carousel.tsx";
 import Footer from "../components/footer.tsx";
+import Contact from "../components/contact.tsx";
 import "../styles/header.css";
 import "../styles/hero.css";
 import "../styles/solutions.css";
@@ -137,6 +138,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      
       <section id="solutions" className="container py-lg">
         <h2 className="section-title">Alguns de nossos serviços</h2>
         <p className="section-description">
@@ -212,14 +215,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="contact-section section-spacing">
+      {/* <section id="contact" className="contact-section section-spacing">
         <p className="contact-intro">Envie sua dúvida</p>
         <h2>Envie sua dúvida</h2>
         <h3>Envie sua dúvida e teremos o prazer de responder ela, estamos a disposição.</h3>
         <input type="email" placeholder="Seu Melhor E-mail" />
         <input type="text" placeholder="Motivo do contato. Ex gostaria de saber se tem desconto." />
         <Button text="Envie seu e-mail" />
-      </section>  
+      </section>   */}
+
+      <Contact />
 
       <Footer />
 

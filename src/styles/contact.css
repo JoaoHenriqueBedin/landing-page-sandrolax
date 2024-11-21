@@ -1,38 +1,42 @@
-.contact-section {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    max-width: 1200px; /* Ajuste para o mesmo tamanho das outras seções */
-    margin: 0 auto;
-  }
-  
-  .contact-intro {
-    color: #2d86fbd5;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .contact-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .contact-section h3 {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    color: #666;
-  }
-  
-  .contact-section input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  
-  .contact-section button {
-    margin-top: 20px;
-  }
+.contato-section {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #6c757d;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
